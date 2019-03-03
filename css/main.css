@@ -165,7 +165,7 @@ body
 }
 h1
 {
-    color: #ff1493;
+    color: white;
 }
 a,
 a:link,
@@ -178,7 +178,7 @@ a:visited
             transition: color .25s ease-out;
     text-decoration: none;
 
-    color: #21a97e;
+    color: white;
     outline: none;
 }
 a:hover
@@ -246,18 +246,15 @@ hr
 
     background: #fff;
 }
-#branding h1
-{
-    font-size: 18px;
-    font-weight: bold;
-
+#branding h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #483D8B;
     width: 940px;
-    margin: 0 auto;
-    padding: 10px 15px;
-
+    /* margin: 1vw; */
+    padding: 2vw;
     text-transform: uppercase;
 }
-
 /* Nav
 *****************************************************************/
 
@@ -621,6 +618,110 @@ a.next:hover
     position: absolute;
     top: 1020px;
     left: 450px;
+}
+@media (min-width: 375px) {
+	p{
+		font-size: 4vw;
+		line-height: 4vw;
+		margin: 0 0 4vw 1vw;
+}
+#content h1 {
+    margin: 0 0 2vw 1vw;
+		font-size: 9vw;
+		line-height: 8vw;
+}
+#branding h1 {
+    font-size: 4vw;
+	}
+	#bg3-1 {
+    position: absolute;
+    top: -2vw;
+    left: 29vw;
+    height: 95vw;
+}
+#bg3-2 {
+    position: absolute;
+    top: 87vw;
+    left: 29vw;
+    width: 86vw;
+}
+#bg3-3 {
+    position: absolute;
+    top: 206vw;
+    left: 9vw;
+    width: 85vw;
+}
+#bg3-2 {
+    position: absolute;
+    top: 91vw;
+    left: 29vw;
+    width: 89vw;
+}
+#bg3-4 {
+    position: absolute;
+    top: 273vw;
+    left: 28vw;
+    width: 69vw;
+}
+#bg3-5 {
+    position: absolute;
+    top: 356vw;
+    left: 21vw;
+    width: 93vw;
+}
+#bg3-6 {
+    position: absolute;
+    top: 448vw;
+    left: 13vw;
+    width: 101vw;
+}
+#bg3-7 {
+    position: absolute;
+    top: 524vw;
+    left: 16vw;
+    width: 99vw;
+}
+#bg3-8 {
+    position: absolute;
+    top: 618vw;
+    left: 12vw;
+    width: 101vw;
+}
+}
+@media (min-width: 768px) {
+	#content h1 {
+    margin: 0 0 3vw 3vw;
+}
+p {
+
+    font-size: 2vw;
+    margin: 0 0 2vw 3vw;
+    text-align: -webkit-left;
+}
+#bg3-1 {
+	    top: 0vw;
+	    left: 34vw;
+	    height: 61vw;
+	}
+	#bg3-3 {
+    top: 179vw;
+}
+#bg3-5 {
+    top: 337vw;
+}
+#bg3-6 {
+    top: 423vw;
+}
+#bg3-7 {
+    top: 490vw;
+}
+#bg3-8 {
+    position: absolute;
+    top: 591vw;
+    left: 12vw;
+    width: 88vw;
+}
+
 }
 @media (min-width: 1440px){
 	p{
