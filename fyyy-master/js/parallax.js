@@ -1,8 +1,3 @@
-var count = 30;//количество
-var color = "#008cff";//это основной 
-var color2 = "#008cff";//это в уголочке
-var Bsize = 100; //чем больше тем меньше
-var speed = 1; //скорость шариков целое число
 //тут я все сделал можно не трогать 
 $(document).ready(function() {
 	
@@ -201,15 +196,15 @@ function redrawDotNav(){
     var min = 0.1;
     var max = 1.5;
     this.vel = new Point(
-      (Math.random() > 0.5 ? speed : -speed) * (0.2 + Math.random() * 0.25),
-      (Math.random() > 0.5 ? speed : -speed) * (0.2 + Math.random())
+      (Math.random() > 0.5 ? 1 : -1) * (0.2 + Math.random() * 0.25),
+      (Math.random() > 0.5 ? 1 : -1) * (0.2 + Math.random())
     );
     this.pos = new Point(
       parent.width * 0.2 + Math.random() * parent.width * 0.6,
       parent.height * 0.2 + Math.random() * parent.height * 0.6
     );
     this.size =
-      parent.wh / Bsize + (Math.random() * (max - min) + min) * (parent.wh / 15);
+      parent.wh / 15 + (Math.random() * (max - min) + min) * (parent.wh / 15);
     this.width = parent.width;
     this.height = parent.height;
   };
@@ -431,7 +426,7 @@ function redrawDotNav(){
     ctx = screen.ctx;
   screen.resize();
   // create LavaLamps
-  lava0 = new LavaLamp(screen.width, screen.height, count, color2, color);
+  lava0 = new LavaLamp(screen.width, screen.height, 6, "#FF9298", "#E4008E");
 
   run();
 })();
